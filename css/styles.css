@@ -3,8 +3,10 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario: #ab846e;
+    --secundario: #d8af97;
     --blanco: #fafafa;
     --negro: #070707;
+    --gris: #e1e1e1
 }
 
 html {
@@ -25,6 +27,9 @@ body {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
+}
+a {
+    text-decoration: none;
 }
 
 h1, h2, h3, h4 {
@@ -50,11 +55,11 @@ img {
 
 /* utilidades */
 
-.non-margin {
+.no-margin {
     margin: 0;
 }
 
-.non-padding {
+.no-padding {
     padding: 0;
 }
 
@@ -70,4 +75,97 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    padding: 0 2rem;
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+@media (min-width:768px){ 
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+
+.logo {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.logo__nombre {
+    font-weight: 400;
+}
+
+.logo__bold {
+    font-weight: 700;
+}
+
+@media (min-width:768px){ 
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+@media (min-width:768px){ 
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+
+}
+
+/* entradas */
+
+.entrada {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+    
+    
+}
+
+.entrada__imagen img {
+    border-radius: 0.5rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: none;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: block;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: var(--fuenteHeading);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+
+}
+
+@media (min-width:768px){ 
+    .boton{
+        display: inline-block;
+    }
 }
