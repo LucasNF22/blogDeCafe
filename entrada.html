@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Café</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog de Café</title>
+    
+        <!-- Prefetch -->
+     
+        <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+     
+        <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    </head>
 
 <body>
     <header class="header">
@@ -41,7 +48,10 @@
 
         <div class="entrada">
             
-                <img src="/img/blog1.jpg" alt="imagen blog">
+            <picture>
+                <source loading="lazy" srcset="img/blog1.webp" type="image/webp" >
+                <img loading="lazy" src="/img/blog1.jpg" alt="imagen blog" >
+            </picture>
             
             <p>Integer mattis mauris eu justo ultrices, eu ornare sem rutrum. Fusce volutpat, orci quis sollicitudin
                 tempor, magna nunc sagittis est, vitae cursus ligula lectus in nunc. Sed iaculis erat sed ipsum ornare,
@@ -80,6 +90,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/js/modernizr.js"></script>
 
 </body>
 

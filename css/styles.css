@@ -2,7 +2,7 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
-    --primario: #ab846e;
+    --primario: #916750;
     --secundario: #ecd5c8;
     --blanco: #fafafa;
     --negro: #070707;
@@ -68,9 +68,15 @@ img {
 }
 
 /* Header */
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
+}
 
 .header {
-    background-image: url(../img/banner.jpg);
     height: 60rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,6 +281,7 @@ img {
 }
 
 /* Contacto */
+
 
 .contacto-bg {
     background-image: url(../img/contacto.jpg);
