@@ -358,4 +358,20 @@ img {
     
 }
 
+.error {
+    background-color: RGBA(255, 0, 0, 0.5);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    border-radius: 0.5rem;
+}
+
+.enviado {
+    background-color: RGBA(0, 255, 0, 0.5);
+    text-align: center;
+    padding: 1rem;
+    color: var(--negro);
+    border-radius: 0.5rem;
+}
+
 
